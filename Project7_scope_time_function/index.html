@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/main.js"></script>
+    <title>Scope Time Function</title>
+</head>
+<body>
+    <p id="Global" onclick="CalculateGlobalNum()">Click here to see a global variable</p>
+    <p id="Local" onclick="CalculateLocalNum()">Click here to see a local variable</p>
+    <p id="Error" onclick="CalculateNumError()">Click here to see an error with variable scope</p>
+    <p id="Time" onclick="CheckTimeOfDay()">Click here to see time of day</p><br><br>
+
+    <p>Enter your age to see if you are old enough to drive:</p>
+    <input id="Age"/>
+    <button onclick="CheckAge()">Click here to check age</button>
+    <p id="AgeMessage"></p> <br><br>
+
+    <p id="Time_of_day"></p>
+    <button onclick="Time_function()">Click here to get the time.</button>
+</body>
+</html>
