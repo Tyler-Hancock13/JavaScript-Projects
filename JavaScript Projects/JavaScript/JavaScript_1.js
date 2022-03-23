@@ -42,3 +42,24 @@ function ChangeTextByClass() {
         currentText[i].innerHTML = "The text has changed!";
     }
 }
+
+//Challenge 16, 17
+//A function that will draw an X shape using the canvas element and JavaScript
+function DrawX() {
+    var canvas = document.getElementById("Draw");
+    var ctx = canvas.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(500, 250);
+    ctx.stroke();
+
+    ctx.moveTo(500,0);
+    ctx.lineTo(0,250);
+    ctx.stroke();
+
+    var grd = ctx.createLinearGradient(0,0,170,0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1,"blue");
+
+    ctx.fillStyle = grd;
+    ctx.fillRect(20,20,150,100);
+}
